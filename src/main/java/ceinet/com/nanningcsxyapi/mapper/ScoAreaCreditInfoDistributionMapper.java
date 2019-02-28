@@ -7,7 +7,8 @@ import java.util.List;
 /**
 * Created by Mybatis Generator 2019/02/27
 */
-public interface ScoAreaCreditInfoDistributionMapper {
+
+public interface ScoAreaCreditInfoDistributionMapper  {
     int deleteByPrimaryKey(Integer fdid);
 
     int insert(ScoAreaCreditInfoDistribution record);

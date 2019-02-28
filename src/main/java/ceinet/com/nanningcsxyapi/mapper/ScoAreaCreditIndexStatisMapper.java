@@ -1,5 +1,6 @@
 package ceinet.com.nanningcsxyapi.mapper;
 
+import ceinet.com.nanningcsxyapi.annotation.ApiStaticAnnotation;
 import ceinet.com.nanningcsxyapi.pojo.ScoAreaCreditIndexStatis;
 
 import java.util.List;
@@ -7,7 +8,8 @@ import java.util.List;
 /**
 * Created by Mybatis Generator 2019/02/27
 */
-public interface ScoAreaCreditIndexStatisMapper {
+@ApiStaticAnnotation(apiUrl = "")
+public interface ScoAreaCreditIndexStatisMapper  extends  ApiStaticInterface {
     int deleteByPrimaryKey(Integer fdid);
 
     int insert(ScoAreaCreditIndexStatis record);

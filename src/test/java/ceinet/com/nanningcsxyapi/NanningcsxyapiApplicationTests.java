@@ -1,5 +1,6 @@
 package ceinet.com.nanningcsxyapi;
 
+import ceinet.com.nanningcsxyapi.WebService.ApiWebService;
 import ceinet.com.nanningcsxyapi.mapper.ScoAreaCreditIndexStatisMapper;
 import ceinet.com.nanningcsxyapi.pojo.ScoAreaCreditIndexStatis;
 import org.junit.Test;
@@ -39,5 +40,10 @@ public class NanningcsxyapiApplicationTests {
             System.out.println(scoAreaCreditIndexStatis.toString());
         }
 
+    }
+    @Test
+    public  void  fun3() throws Exception {
+        ApiWebService apiWebService=new ApiWebService();
+//         apiWebService.getAccessToken();
     }
 }

@@ -22,6 +22,7 @@
                   <option name="javaMapperPath" value="$PROJECT_DIR$/src/main/java" />
                   <option name="javaModelPacakge" value="ceinet.com.nanningcsxyapi.pojo" />
                   <option name="javaModelPath" value="$PROJECT_DIR$/src/main/java" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/src/main/java" />
                   <option name="xmlPackage" value="mapper" />
                   <option name="xmlPath" value="$PROJECT_DIR$/src/main/resources" />
                 </UserPackageAndPathInfoByModule>
