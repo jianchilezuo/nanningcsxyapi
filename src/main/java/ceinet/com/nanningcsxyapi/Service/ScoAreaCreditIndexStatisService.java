@@ -1,15 +1,11 @@
-package ceinet.com.nanningcsxyapi.mapper;
+package ceinet.com.nanningcsxyapi.Service;
 
-import ceinet.com.nanningcsxyapi.annotation.ApiStaticAnnotation;
 import ceinet.com.nanningcsxyapi.pojo.ScoAreaCreditIndexStatis;
 
 import java.util.List;
 
-/**
-* Created by Mybatis Generator 2019/02/27
-*/
+public interface ScoAreaCreditIndexStatisService {
 
-public interface ScoAreaCreditIndexStatisMapper   {
     int deleteByPrimaryKey(Integer fdid);
 
     int insert(ScoAreaCreditIndexStatis record);

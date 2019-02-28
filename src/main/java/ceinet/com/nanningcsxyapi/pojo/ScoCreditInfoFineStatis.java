@@ -7,7 +7,7 @@ import lombok.Data;
 * Created by Mybatis Generator 2019/02/27
 */
 @Data
-public class ScoCreditInfoFineStatis {
+public class ScoCreditInfoFineStatis  implements  ApiScoModel {
     private Integer fdid;
 
     private String creditInfoClassify;

@@ -7,7 +7,7 @@ import lombok.Data;
 * Created by Mybatis Generator 2019/02/27
 */
 @Data
-public class ScoAreaDishonestyEventStatis {
+public class ScoAreaDishonestyEventStatis  implements  ApiScoModel{
     private Integer fdid;
 
     private String areaName;

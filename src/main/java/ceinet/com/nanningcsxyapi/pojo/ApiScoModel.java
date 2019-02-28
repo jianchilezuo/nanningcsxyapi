@@ -1,4 +1,4 @@
 package ceinet.com.nanningcsxyapi.pojo;
 
-public interface ApiStatic {
+public interface ApiScoModel {
 }

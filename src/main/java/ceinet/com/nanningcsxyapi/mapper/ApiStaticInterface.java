@@ -4,9 +4,9 @@ import ceinet.com.nanningcsxyapi.pojo.ScoAreaCreditIndexStatis;
 
 import java.util.List;
 
-public interface ApiStaticInterface {
-
-//    List<ScoAreaCreditIndexStatis> findListByStatisTime(String fdStatisTime);
+//public interface ApiStaticInterface {
 //
-//    List<ScoAreaCreditIndexStatis> findListByMaxStatisTime();
-}
+////    List<ScoAreaCreditIndexStatis> findListByStatisTime(String fdStatisTime);
+////
+////    List<ScoAreaCreditIndexStatis> findListByMaxStatisTime();
+//}

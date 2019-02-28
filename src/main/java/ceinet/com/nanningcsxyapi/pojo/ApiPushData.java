@@ -6,5 +6,5 @@ import java.util.List;
 
 @Data
 public class ApiPushData {
-    private List<ApiStatic> list;
+    private List<ApiScoModel> list;
 }

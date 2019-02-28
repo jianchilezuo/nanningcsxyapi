@@ -7,7 +7,7 @@ import lombok.Data;
 * Created by Mybatis Generator 2019/02/27
 */
 @Data
-public class ScoRuleInfoStatis {
+public class ScoRuleInfoStatis  implements  ApiScoModel {
     private Integer fdid;
 
     private Integer ruleInfoTotal;

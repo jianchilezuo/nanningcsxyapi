@@ -1,16 +1,9 @@
-package ceinet.com.nanningcsxyapi.mapper;
-
-import ceinet.com.nanningcsxyapi.annotation.ApiStaticAnnotation;
-import ceinet.com.nanningcsxyapi.pojo.ScoCreditInfoFineStatis;
+package ceinet.com.nanningcsxyapi.Service;
 import ceinet.com.nanningcsxyapi.pojo.ScoEventInfoStatis;
-
 import java.util.List;
 
-/**
-* Created by Mybatis Generator 2019/02/27
-*/
+public interface ScoEventInfoStatisService {
 
-public interface ScoEventInfoStatisMapper {
     int deleteByPrimaryKey(Integer fdid);
 
     int insert(ScoEventInfoStatis record);
