@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="generatedClassPathList">
+          <list>
+            <option value="D:\java\工作项目\nanningcsxyapi\src\main\java\ceinet\com\nanningcsxyapi\pojo" />
+          </list>
+        </option>
+        <option name="javaMapperPackage" value="ceinet.com.nanningcsxyapi.mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/src/main/java" />
+        <option name="javaModelPackage" value="ceinet.com.nanningcsxyapi.pojo" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="nanningcsxyapi" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="nanningcsxyapi">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="ceinet.com.nanningcsxyapi.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/src/main/java" />
+                  <option name="javaModelPacakge" value="ceinet.com.nanningcsxyapi.pojo" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/src/main/java" />
+                  <option name="xmlPackage" value="mapper" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="nanningapi:sco_area_credit_index_statis">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="fdid" />
+                  <option name="javaModelName" value="ScoAreaCreditIndexStatis" />
+                  <option name="moduleName" value="nanningcsxyapi" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="nanningapi:sco_area_credit_info_distribution">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="fdid" />
+                  <option name="javaModelName" value="ScoAreaCreditInfoDistribution" />
+                  <option name="moduleName" value="nanningcsxyapi" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="nanningapi:sco_area_dishonesty_event_statis">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="fdid" />
+                  <option name="javaModelName" value="ScoAreaDishonestyEventStatis" />
+                  <option name="moduleName" value="nanningcsxyapi" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="nanningapi:sco_credit_info_fine_statis">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="ScoCreditInfoFineStatis" />
+                  <option name="moduleName" value="nanningcsxyapi" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="nanningapi:sco_event_info_statis">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="fdid" />
+                  <option name="javaModelName" value="ScoEventInfoStatis" />
+                  <option name="moduleName" value="nanningcsxyapi" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="nanningapi:sco_rule_info_statis">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="fdid" />
+                  <option name="javaModelName" value="ScoRuleInfoStatis" />
+                  <option name="moduleName" value="nanningcsxyapi" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="useLomBokOnModel" value="true" />
+        <option name="xmlMapperPackage" value="mapper" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/src/main/resources" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>
