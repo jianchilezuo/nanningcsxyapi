@@ -1,11 +1,14 @@
 package ceinet.com.nanningcsxyapi;
 
+import ceinet.com.nanningcsxyapi.Service.ApiService;
 import ceinet.com.nanningcsxyapi.WebService.ApiWebService;
 import ceinet.com.nanningcsxyapi.annotation.ApiStaticAnnotation;
 import ceinet.com.nanningcsxyapi.mapper.ScoAreaCreditIndexStatisMapper;
 import ceinet.com.nanningcsxyapi.pojo.ApiPullDataModel;
+import ceinet.com.nanningcsxyapi.pojo.ApiUserModel;
 import ceinet.com.nanningcsxyapi.pojo.ScoAreaCreditIndexStatis;
 import ceinet.com.nanningcsxyapi.util.ClassUtil;
+import com.alibaba.fastjson.JSON;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -67,6 +70,22 @@ public class NanningcsxyapiApplicationTests {
         for (Class<?> classByPackageNameAndAnnotationClass : allClassByPackageNameAndAnnotationClass) {
             System.out.println(classByPackageNameAndAnnotationClass.toString());
         }
+
+    }
+    @Autowired
+    private ApiService apiService;
+    @Test
+    public  void  fun6() throws Exception {
+        apiService.pushAllListByAutoMaxStatisTime();
+    }
+
+    @Test
+    public  void  fun7(){
+
+        ApiUserModel apiUserModel = new ApiUserModel();
+        apiUserModel.setUsername("123");
+        apiUserModel.setPassword("123");
+        String jsonString = JSON.toJSONString(apiUserModel);
 
     }
 }

@@ -12,8 +12,15 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/** 
+* @Description: 批量保存事件信息统计
+* @Param:  
+* @return:  
+* @Author: 张文龙
+* @Date: 2019/3/1 
+*/ 
 @Service
-@ApiStaticAnnotation(apiUrl = "")
+@ApiStaticAnnotation(apiUrl = "/api/nncs/score/eventInfoStatis/v1/batchSave")
 public class ScoEventInfoStatisServiceImpl implements ScoEventInfoStatisService , ScoServiceInterface {
 
     @Autowired

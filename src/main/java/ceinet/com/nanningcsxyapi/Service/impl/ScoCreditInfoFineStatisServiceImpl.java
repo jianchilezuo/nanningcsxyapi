@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-@ApiStaticAnnotation(apiUrl = "")
+@ApiStaticAnnotation(apiUrl = "/api/nncs/score/creditInfoFineStatis/v1/batchSave")
 public class ScoCreditInfoFineStatisServiceImpl implements ScoCreditInfoFineStatisService , ScoServiceInterface {
     @Autowired
     private ScoCreditInfoFineStatisMapper scoCreditInfoFineStatisMapper;

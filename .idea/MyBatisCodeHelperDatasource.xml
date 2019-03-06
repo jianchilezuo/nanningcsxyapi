@@ -22,7 +22,6 @@
                   <option name="javaMapperPath" value="$PROJECT_DIR$/src/main/java" />
                   <option name="javaModelPacakge" value="ceinet.com.nanningcsxyapi.pojo" />
                   <option name="javaModelPath" value="$PROJECT_DIR$/src/main/java" />
-                  <option name="javaServicePath" value="$PROJECT_DIR$/src/main/java" />
                   <option name="xmlPackage" value="mapper" />
                   <option name="xmlPath" value="$PROJECT_DIR$/src/main/resources" />
                 </UserPackageAndPathInfoByModule>
@@ -47,6 +46,16 @@
                 <TableGenerateConfig>
                   <option name="generatedKey" value="fdid" />
                   <option name="javaModelName" value="ScoAreaCreditInfoDistribution" />
+                  <option name="moduleName" value="nanningcsxyapi" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="nanningapi:sco_area_credit_statis">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="ScoAreaCreditStatis" />
                   <option name="moduleName" value="nanningcsxyapi" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>

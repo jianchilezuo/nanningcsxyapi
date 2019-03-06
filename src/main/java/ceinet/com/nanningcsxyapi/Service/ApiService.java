@@ -35,5 +35,5 @@ public interface ApiService<T> {
 
     public boolean pushListByStatisTime(Class<T> clazz, String statisTime) throws Exception;
 
-    public boolean addList(List<ApiScoModel> apiScoModels);
+    public boolean addList(List<ApiScoModel> apiScoModels) throws Exception;
 }

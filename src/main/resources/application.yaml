@@ -9,7 +9,8 @@ mybatis:
   mapper-locations: classpath:mapper/*.xml
 
 api:
-  url: http://59.211.24.142:8865
+  url: http://nncs-api.wsunw.com
   username: testapi
   password: abcd1234
   accesstokenurl: /api/nncs/auth/access_token/v1/get
+  areadishonestyeventstatisurl: /api/nncs/score/areaDishonestyEventStatis/v1/batchSave

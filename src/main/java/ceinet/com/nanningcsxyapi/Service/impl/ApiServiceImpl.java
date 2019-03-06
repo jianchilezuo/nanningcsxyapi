@@ -2,12 +2,17 @@ package ceinet.com.nanningcsxyapi.Service.impl;
 
 import ceinet.com.nanningcsxyapi.Service.ApiService;
 import ceinet.com.nanningcsxyapi.Service.ScoService;
+import ceinet.com.nanningcsxyapi.Service.ScoServiceInterface;
 import ceinet.com.nanningcsxyapi.WebService.ApiWebService;
 import ceinet.com.nanningcsxyapi.annotation.ApiStaticAnnotation;
+import ceinet.com.nanningcsxyapi.component.ApplicationContextUtil;
+import ceinet.com.nanningcsxyapi.pojo.ApiModel;
 import ceinet.com.nanningcsxyapi.pojo.ApiPushData;
+import ceinet.com.nanningcsxyapi.pojo.ApiPushDataModel;
 import ceinet.com.nanningcsxyapi.pojo.ApiScoModel;
 import ceinet.com.nanningcsxyapi.util.ClassUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -59,17 +64,21 @@ public class ApiServiceImpl<T> implements ApiService<T> {
         }else {
             list=scoService.getListByAutoMaxStatisTime(clazz,statisTime);
         }
-        apiStaticAnnotation=clazz.getAnnotation(apiStaticAnnotation.getClass());
+        apiStaticAnnotation=clazz.getAnnotation(ApiStaticAnnotation.class);
         if(apiStaticAnnotation==null||apiStaticAnnotation.apiUrl().equals("")){
             throw  new Exception("apiStaticAnnotation注解失败或者apiStaticAnnotation的apiUrl为空！");
         }
-        apiPushData.setList(list);
-        if(!apiWebService.addStatisList(apiStaticAnnotation.apiUrl(),apiPushData)){
+        ApiPushDataModel  apiPushDataModel=new ApiPushDataModel();
+        apiPushDataModel.setList(list);
+        apiPushData.setData(apiPushDataModel);
+        ApplicationContext applicationContext = ApplicationContextUtil.getApplicationContext();
+        ApiModel bean = applicationContext.getBean(ApiModel.class);
+        if(!apiWebService.addStatisList(bean.getUrlIp()+apiStaticAnnotation.apiUrl(),apiPushData)){
             throw  new Exception("推送数据失败！");
         }
         return true;
     }
-    public boolean addList(List<ApiScoModel> apiScoModels) {
+    public boolean addList(List<ApiScoModel> apiScoModels) throws Exception {
         return scoService.addList(apiScoModels);
     }
 }

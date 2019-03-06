@@ -10,5 +10,5 @@ public interface ScoService<T> {
 
    public List<ApiScoModel> getListByAutoMaxStatisTime(Class czz ,String statisTime) throws IllegalAccessException, InstantiationException;
 
-   public  boolean addList(List<ApiScoModel> ms);
+   public  boolean addList(List<ApiScoModel> ms) throws Exception;
 }

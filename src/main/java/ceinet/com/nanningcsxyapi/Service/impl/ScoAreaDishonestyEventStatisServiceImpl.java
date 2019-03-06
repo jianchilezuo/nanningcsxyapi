@@ -12,8 +12,15 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/** 
+* @Description: 批量保存区域失信事件统计
+* @Param:  
+* @return:  
+* @Author: 张文龙
+* @Date: 2019/3/1 
+*/ 
 @Service
-@ApiStaticAnnotation(apiUrl = "")
+@ApiStaticAnnotation(apiUrl = "/api/nncs/score/areaDishonestyEventStatis/v1/batchSave")
 public class ScoAreaDishonestyEventStatisServiceImpl implements ScoAreaDishonestyEventStatisService , ScoServiceInterface {
 
     @Autowired

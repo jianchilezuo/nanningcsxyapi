@@ -1,6 +1,8 @@
 package ceinet.com.nanningcsxyapi.pojo;
 
 import java.util.Date;
+
+import com.alibaba.fastjson.annotation.JSONField;
 import lombok.Data;
 
 /**
@@ -8,6 +10,7 @@ import lombok.Data;
 */
 @Data
 public class ScoAreaDishonestyEventStatis  implements  ApiScoModel{
+    @JSONField(serialize = false)
     private Integer fdid;
 
     private String areaName;
@@ -19,6 +22,6 @@ public class ScoAreaDishonestyEventStatis  implements  ApiScoModel{
     private Integer industryRank;
 
     private String statisTime;
-
+    @JSONField(serialize = false)
     private Date updatetime;
 }
